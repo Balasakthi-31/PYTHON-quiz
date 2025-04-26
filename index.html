@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Python Quiz App</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="img/favicon.ico" rel="icon">
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+    body {
+      background: url('img/image-1.jpg') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .quiz-container {
+      background: rgba(255, 255, 255, 0.8); /* Slightly transparent white background */
+      padding: 30px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+    .controls {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="quiz-container">
+    <h1>Python Quiz</h1>
+
+    <div id="question" class="question">
+      <h2>Question text here...</h2>
+    </div>
+
+    <div id="options" class="options">
+      <!-- Options will be added by JavaScript -->
+    </div>
+
+    <div class="controls">
+      <button id="next-btn">Next</button>
+    </div>
+
+    <div class="lobby">
+      <h2>Created by Balasakthi</h2>
+    </div>
+    <style>
+        /* existing styles... */
+        .lobby h2 {
+          color: rgb(238, 37, 6);
+          font-variant: small-caps;
+          margin-top: 20px;
+        }
+      </style>
+      
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
